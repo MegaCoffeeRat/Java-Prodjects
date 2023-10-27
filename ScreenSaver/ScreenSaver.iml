@@ -9,5 +9,16 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libs1" level="project" />
     <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../SlickJavaLib/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../SlickJavaLib/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="SlickJavaLib" level="project" />
   </component>
 </module>

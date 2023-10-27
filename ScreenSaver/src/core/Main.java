@@ -8,6 +8,7 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class Main extends StateBasedGame 
 {
+	Star[] stars;
 	public final static int FRAMES_PER_SECOND = 60;
 	private static AppGameContainer appgc;
 	
