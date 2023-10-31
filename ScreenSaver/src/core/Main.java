@@ -8,19 +8,19 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class Main extends StateBasedGame 
 {
-	Star[] stars;
 	public final static int FRAMES_PER_SECOND = 60;
 	private static AppGameContainer appgc;
 	
-    public static final int GAME_ID  = 0;
+    public static final int STAR_ID  = 0;
+	private BasicGameState stars;
     
     private BasicGameState game;  
     
 	public Main(String name) 
 	{
 		super(name);
-		
-		game = new Game(GAME_ID);
+
+		stars = new StarFieldState(STAR_ID);
 	}
 
 	public static int getScreenWidth()
@@ -36,7 +36,7 @@ public class Main extends StateBasedGame
 
 	public void initStatesList(GameContainer gc) throws SlickException 
 	{
-		addState(game);
+		addState(stars);
 	}
 
 	public static void main(String[] args) 

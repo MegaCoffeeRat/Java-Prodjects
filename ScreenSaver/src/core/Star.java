@@ -1,18 +1,16 @@
 package core;
-
-import java.awt.*;
-
+import org.newdawn.slick.Color;
+import org.newdawn.slick.Graphics;
 public class Star {
+
     float x;
     float y;
-    int size;
-
+    float xSpeed;
     Star()
     {
-        x = (float) (Math.random()*Main.getScreenWidth());
-        y = (float)(Math.random()*Main.getScreenWidth());
-        size = 2;
+
     }
+
 
     void update()
     {
@@ -21,7 +19,7 @@ public class Star {
 
 
 
-    void render(Graphics g)
+    void render()
     {
 
     }
