@@ -1,27 +1,38 @@
 package core;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
-public class Snow {
+public class Confett {
 
     float x;
     float y;
-
+    int xSpeed;
+    int ySpeed;
     int size;
-    Snow()
+    Confett()
     {
         x = (float)(Math.random()*Main.getScreenWidth());
         y = (float)(Math.random()*Main.getScreenHeight());
         size = 6;
+
+
+        xSpeed = (int)(Math.random()*7);
+        ySpeed = (int)(Math.random()*7);
 
     }
 
 
     void update()
     {
-        y = y+ size/2.0f;
+        x = x + xSpeed;
+        y = y+ ySpeed;
+
+        if(x>Main.getScreenWidth())
+        {
+            x = -10;
+        }
         if(y>Main.getScreenHeight())
         {
-            y = 0;
+            y = -10;
         }
     }
 
@@ -30,6 +41,6 @@ public class Snow {
     void render(Graphics g)
     {
         g.setColor(new Color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255)));
-        g.fillOval(x, y, size+5, size+15);
+        g.fillRect(x, y, 25, 10+15);
     }
 }

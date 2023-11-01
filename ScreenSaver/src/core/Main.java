@@ -11,8 +11,8 @@ public class Main extends StateBasedGame
 	public final static int FRAMES_PER_SECOND = 60;
 	private static AppGameContainer appgc;
 	
-    public static final int SNOW_ID  = 0;
-	private BasicGameState snow;
+    public static final int CONFETTI_id  = 0;
+	private BasicGameState confetti;
     
 
     
@@ -20,7 +20,7 @@ public class Main extends StateBasedGame
 	{
 		super(name);
 
-		snow = new SnowFallState(SNOW_ID);
+		confetti = new ConfettiState(CONFETTI_id);
 	}
 
 	public static int getScreenWidth()
@@ -36,7 +36,7 @@ public class Main extends StateBasedGame
 
 	public void initStatesList(GameContainer gc) throws SlickException 
 	{
-		addState(snow);
+		addState(confetti);
 	}
 
 	public static void main(String[] args) 
