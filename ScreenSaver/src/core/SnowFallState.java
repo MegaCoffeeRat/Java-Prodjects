@@ -1,16 +1,18 @@
 package core;
 
+import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
-public class StarFieldState extends BasicGameState
+public class SnowFallState extends BasicGameState
 {	
 	private int id;
+	private Snow[] snows;private StateBasedGame sbg;
 
-	public StarFieldState(int id)
+	public SnowFallState(int id)
 	{
 		this.id = id;
 	}
@@ -24,17 +26,38 @@ public class StarFieldState extends BasicGameState
 	{
 		// This code happens when you enter a game state for the *first time.*
 		gc.setShowFPS(true);
+		this.sbg = sbg;
+		gc.setShowFPS(true);
+		snows = new Snow[3500];
+
+		for(int i = 0; i < snows.length; i ++)
+		{
+			snows[i] = new Snow();
+		}
+//		windSpeed = 3;
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
 	{	
 		// This is updates your game's logic every frame.  NO DRAWING.
+		for(int i = 0; i < snows.length; i++)
+		{
+			snows[i].update();
+		}
+
 	}
 
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
 
 		// This code renders shapes and images every frame.
+		g.setBackground(Color.black);//new Color(100, 50, 255));
+		for(int i = 0; i < snows.length; i++)
+		{
+			snows[i].render(g);
+		}
+		g.setColor(Color.white);
+		g.drawString(("Snowfall State"), 50, 50);
 	}
 	
 	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException 

@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="398449b8-d41d-4207-8e82-e0ea33388741" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectTemplate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenSaver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenSaver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ScreenSaver/core/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScreenSaver/core/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/StarFieldState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Star.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Starfield.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Snow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/StarFieldState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/SnowFallState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Fedor/OneDrive/Documents/SlickJavaLib",

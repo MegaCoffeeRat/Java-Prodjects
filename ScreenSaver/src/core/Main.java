@@ -11,16 +11,16 @@ public class Main extends StateBasedGame
 	public final static int FRAMES_PER_SECOND = 60;
 	private static AppGameContainer appgc;
 	
-    public static final int STAR_ID  = 0;
-	private BasicGameState stars;
+    public static final int SNOW_ID  = 0;
+	private BasicGameState snow;
     
-    private BasicGameState game;  
+
     
 	public Main(String name) 
 	{
 		super(name);
 
-		stars = new StarFieldState(STAR_ID);
+		snow = new SnowFallState(SNOW_ID);
 	}
 
 	public static int getScreenWidth()
@@ -36,7 +36,7 @@ public class Main extends StateBasedGame
 
 	public void initStatesList(GameContainer gc) throws SlickException 
 	{
-		addState(stars);
+		addState(snow);
 	}
 
 	public static void main(String[] args) 
