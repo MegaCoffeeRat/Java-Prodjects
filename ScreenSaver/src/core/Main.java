@@ -13,8 +13,10 @@ public class Main extends StateBasedGame
 	
     public static final int CONFETTI_id  = 0;
 	public static final int RAIN_ID = 1;
+	public static final int BOUNCE_ID = 2;
 	private BasicGameState confetti;
 	private BasicGameState rain;
+	private BasicGameState bounce;
     
 
     
@@ -24,6 +26,7 @@ public class Main extends StateBasedGame
 
 		confetti = new ConfettiState(CONFETTI_id);
 		rain = new RainState(RAIN_ID);
+		bounce = new BounceState(BOUNCE_ID);
 	}
 
 	public static int getScreenWidth()
@@ -41,6 +44,7 @@ public class Main extends StateBasedGame
 	{
 		addState(confetti);
 		addState(rain);
+		addState(bounce);
 	}
 
 	public static void main(String[] args) 

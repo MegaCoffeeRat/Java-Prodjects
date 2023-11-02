@@ -71,6 +71,9 @@ public class ConfettiState extends BasicGameState
 		if(key == Input.KEY_2) {
 			sbg.enterState(Main.RAIN_ID);
 		}
+		else if(key == Input.KEY_3) {
+			sbg.enterState(Main.BOUNCE_ID);
+		}
 
 	}
 	

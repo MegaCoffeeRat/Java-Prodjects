@@ -22,7 +22,7 @@ public class rainDrop {
         y = y + ySpeed;
         if(y>Main.getScreenHeight())
         {
-            y = y + -10;
+            y = -10;
         }
     }
 

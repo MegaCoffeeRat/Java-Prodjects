@@ -8,13 +8,15 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
-public class RainState extends BasicGameState
+
+
+public class BounceState extends BasicGameState
 {
     private int id;
-    private rainDrop[] Rain;
+    private Ball[] balls;
     private StateBasedGame sbg;
 
-    public RainState(int id)
+    public BounceState(int id)
     {
         this.id = id;
     }
@@ -28,30 +30,30 @@ public class RainState extends BasicGameState
     {
         // This code happens when you enter a game state for the *first time.*
         gc.setShowFPS(true);
-        this.sbg = sbg;
-        Rain = new rainDrop[1600];
-        for(int i = 0; i < Rain.length; i++)
+        balls = new Ball[500];
+
+        for(int i = 0; i < balls.length; i++)
         {
-            Rain[i] = new rainDrop();
+            balls[i] = new Ball();
         }
+
     }
 
     public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
     {
         // This is updates your game's logic every frame.  NO DRAWING.
-        for(int i = 0; i < Rain.length; i++)
+        for(int i = 0; i < balls.length; i++)
         {
-            Rain[i].update();
+            balls[i].update();
         }
     }
 
     public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException
     {
         // This code renders shapes and images every frame.
-       g.setBackground(new Color(130,130,130));
-        for(int i = 0; i < Rain.length; i++)
+        for(int i = 0; i < balls.length; i++)
         {
-            Rain[i].render(g);
+            balls[i].render(g);
         }
     }
 
@@ -71,9 +73,11 @@ public class RainState extends BasicGameState
         if(key == Input.KEY_1) {
             sbg.enterState(Main.CONFETTI_id);
         }
-        else if(key == Input.KEY_3) {
-            sbg.enterState(Main.BOUNCE_ID);
+        else if(key == Input.KEY_2) {
+            sbg.enterState(Main.RAIN_ID);
         }
+
+
     }
 
     public void mousePressed(int button, int x, int y)
