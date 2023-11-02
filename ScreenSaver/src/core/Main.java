@@ -12,7 +12,9 @@ public class Main extends StateBasedGame
 	private static AppGameContainer appgc;
 	
     public static final int CONFETTI_id  = 0;
+	public static final int RAIN_ID = 1;
 	private BasicGameState confetti;
+	private BasicGameState rain;
     
 
     
@@ -21,6 +23,7 @@ public class Main extends StateBasedGame
 		super(name);
 
 		confetti = new ConfettiState(CONFETTI_id);
+		rain = new RainState(RAIN_ID);
 	}
 
 	public static int getScreenWidth()
@@ -37,6 +40,7 @@ public class Main extends StateBasedGame
 	public void initStatesList(GameContainer gc) throws SlickException 
 	{
 		addState(confetti);
+		addState(rain);
 	}
 
 	public static void main(String[] args) 

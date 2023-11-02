@@ -1,16 +1,14 @@
 package core;
 
-import org.newdawn.slick.Color;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
+import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class ConfettiState extends BasicGameState
 {	
 	private int id;
-	private Confett[] snows;private StateBasedGame sbg;
+	private Confett[] Confetti;
+	private StateBasedGame sbg;
 
 	public ConfettiState(int id)
 	{
@@ -25,14 +23,13 @@ public class ConfettiState extends BasicGameState
 	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException 
 	{
 		// This code happens when you enter a game state for the *first time.*
-		gc.setShowFPS(true);
 		this.sbg = sbg;
 		gc.setShowFPS(true);
-		snows = new Confett[3500];
+		Confetti = new Confett[3500];
 
-		for(int i = 0; i < snows.length; i ++)
+		for(int i = 0; i < Confetti.length; i ++)
 		{
-			snows[i] = new Confett();
+			Confetti[i] = new Confett();
 		}
 //		windSpeed = 3;
 	}
@@ -40,9 +37,9 @@ public class ConfettiState extends BasicGameState
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
 	{	
 		// This is updates your game's logic every frame.  NO DRAWING.
-		for(int i = 0; i < snows.length; i++)
+		for(int i = 0; i < Confetti.length; i++)
 		{
-			snows[i].update();
+			Confetti[i].update();
 		}
 
 	}
@@ -52,9 +49,9 @@ public class ConfettiState extends BasicGameState
 
 		// This code renders shapes and images every frame.
 		g.setBackground(new Color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255)));
-		for(int i = 0; i < snows.length; i++)
+		for(int i = 0; i < Confetti.length; i++)
 		{
-			snows[i].render(g);
+			Confetti[i].render(g);
 		}
 	}
 	
@@ -71,6 +68,10 @@ public class ConfettiState extends BasicGameState
 	public void keyPressed(int key, char c)
 	{
 		// This code happens every time the user presses a key
+		if(key == Input.KEY_2) {
+			sbg.enterState(Main.RAIN_ID);
+		}
+
 	}
 	
 	public void mousePressed(int button, int x, int y)
