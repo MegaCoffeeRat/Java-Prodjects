@@ -25,7 +25,7 @@ public class ConfettiState extends BasicGameState
 		// This code happens when you enter a game state for the *first time.*
 		this.sbg = sbg;
 		gc.setShowFPS(true);
-		Confetti = new Confett[3500];
+		Confetti = new Confett[1000];
 
 		for(int i = 0; i < Confetti.length; i ++)
 		{
@@ -48,7 +48,8 @@ public class ConfettiState extends BasicGameState
 	{
 
 		// This code renders shapes and images every frame.
-		g.setBackground(new Color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255)));
+//		g.setBackground(new Color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255)));
+		g.setBackground(Color.black);
 		for(int i = 0; i < Confetti.length; i++)
 		{
 			Confetti[i].render(g);

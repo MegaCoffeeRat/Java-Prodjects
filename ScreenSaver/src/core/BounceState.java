@@ -70,6 +70,7 @@ public class BounceState extends BasicGameState
     public void keyPressed(int key, char c)
     {
         // This code happens every time the user presses a key
+
         if(key == Input.KEY_1) {
             sbg.enterState(Main.CONFETTI_id);
         }
