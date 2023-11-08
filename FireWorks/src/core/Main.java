@@ -19,7 +19,7 @@ public class Main extends StateBasedGame
 	{
 		super(name);
 		
-		game = new Game(GAME_ID);
+		game = new FireWorks(GAME_ID);
 	}
 
 	public static int getScreenWidth()
