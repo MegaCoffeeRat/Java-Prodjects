@@ -12,8 +12,8 @@ import org.newdawn.slick.state.StateBasedGame;
 	private static AppGameContainer appgc;
 	
     public static final int GAME_ID  = 0;
-    
-    private BasicGameState game;  
+
+	private BasicGameState game;
 
 	public Main(String name)
 	{

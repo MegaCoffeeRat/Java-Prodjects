@@ -16,6 +16,7 @@ public class FireWorks extends BasicGameState
 	public ArrayList<FireCloud> clouds;
 	public ArrayList<Expander> exp;
 	private int id;
+	
 
 
 
@@ -62,6 +63,7 @@ public class FireWorks extends BasicGameState
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
 		g.setBackground(Color.black);
+
 		for (basic b : bigBois)
 		{
 			b.render(g);
@@ -74,6 +76,10 @@ public class FireWorks extends BasicGameState
 		{
 			b.render(g);
 		}
+
+
+		g.setColor(Color.white);
+		g.drawString(String.valueOf(bigBois.size() + clouds.size()+ exp.size()), 150, 170);
 
 
 	}
