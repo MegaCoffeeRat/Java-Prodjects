@@ -27,6 +27,8 @@ public class FireCloud {
         yPos = yPos + ySpeed*2;
         ySpeed = ySpeed + gravity;
         xPos = xPos + xSpeed*2;
+
+
     }
     void render(Graphics g)
     {

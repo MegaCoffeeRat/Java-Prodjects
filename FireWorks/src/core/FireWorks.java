@@ -12,9 +12,12 @@ import java.util.ArrayList;
 
 public class FireWorks extends BasicGameState
 {
-	public static ArrayList<basic> bigBois;
+	public  ArrayList<basic> bigBois;
 	public ArrayList<FireCloud> clouds;
+	public ArrayList<Expander> exp;
 	private int id;
+
+
 
 	public FireWorks(int id)
 	{
@@ -32,6 +35,7 @@ public class FireWorks extends BasicGameState
 		gc.setShowFPS(true);
 		bigBois = new ArrayList<basic>();
 		clouds = new ArrayList<FireCloud>();
+		exp = new ArrayList<Expander>();
 
 
 	}
@@ -47,6 +51,10 @@ public class FireWorks extends BasicGameState
 		{
 			b.update();
 		}
+		for (Expander b : exp)
+		{
+			b.update();
+		}
 
 
 	}
@@ -59,6 +67,10 @@ public class FireWorks extends BasicGameState
 			b.render(g);
 		}
 		for (FireCloud b : clouds)
+		{
+			b.render(g);
+		}
+		for (Expander b : exp)
 		{
 			b.render(g);
 		}
@@ -92,10 +104,16 @@ public class FireWorks extends BasicGameState
 		}
 
 
+		if(button == 2) {
+			for (int i = 0; i < 15; i++) {
+				exp.add(new Expander(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
+			}
+		}
+
+
 		if(button == 1) {
 			for (int i = 0; i < 100; i++) {
 				clouds.add(new FireCloud(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
-
 
 			}
 		}
