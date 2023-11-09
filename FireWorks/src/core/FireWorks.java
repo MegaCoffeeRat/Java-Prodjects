@@ -12,7 +12,8 @@ import java.util.ArrayList;
 
 public class FireWorks extends BasicGameState
 {
-	public static ArrayList<BigBoi> bigBois;
+	public static ArrayList<basic> bigBois;
+	public ArrayList<FireCloud> clouds;
 	private int id;
 
 	public FireWorks(int id)
@@ -29,14 +30,20 @@ public class FireWorks extends BasicGameState
 	{
 		// This code happens when you enter a game state for the *first time.*
 		gc.setShowFPS(true);
-		bigBois = new ArrayList<BigBoi>();
+		bigBois = new ArrayList<basic>();
+		clouds = new ArrayList<FireCloud>();
 
 
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
 
-		for (BigBoi b : bigBois)
+		for (basic b : bigBois)
+		{
+			b.update();
+		}
+
+		for (FireCloud b : clouds)
 		{
 			b.update();
 		}
@@ -47,7 +54,11 @@ public class FireWorks extends BasicGameState
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
 		g.setBackground(Color.black);
-		for (BigBoi b : bigBois)
+		for (basic b : bigBois)
+		{
+			b.render(g);
+		}
+		for (FireCloud b : clouds)
 		{
 			b.render(g);
 		}
@@ -74,7 +85,17 @@ public class FireWorks extends BasicGameState
 	{
 		if(button == 0) {
 			for (int i = 0; i < (int) (Math.random() * 78); i++) {
-				bigBois.add(new BigBoi(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
+				bigBois.add(new basic(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
+
+
+			}
+		}
+
+
+		if(button == 1) {
+			for (int i = 0; i < 100; i++) {
+				clouds.add(new FireCloud(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
+
 
 			}
 		}

@@ -6,7 +6,7 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
-public class Main extends StateBasedGame 
+	public class Main extends StateBasedGame
 {
 	public final static int FRAMES_PER_SECOND = 60;
 	private static AppGameContainer appgc;
