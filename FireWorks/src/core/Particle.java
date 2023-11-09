@@ -6,35 +6,10 @@ public class Particle {
     float xPos;
     float yPos;
 
-
-
-
-    float xSpeed;
-    float ySpeed;
-
-
-
-
     Particle(float x, float y)
     {
         xPos = x;
         yPos = y;
-
-
-
     }
 
-
-    void update()
-    {
-
-
-    }
-
-
-    void render(Graphics g)
-    {
-        g.setColor(Color.green);
-        g.fillOval(xPos, yPos, 10,10);
-    }
 }

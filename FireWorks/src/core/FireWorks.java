@@ -1,5 +1,6 @@
 package core;
 
+import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
@@ -13,6 +14,8 @@ public class FireWorks extends BasicGameState
 {
 	public static ArrayList<Particle> particles;
 	private int id;
+	int Mx = Mouse.getX();
+	int My = Mouse.getY();
 
 	public FireWorks(int id)
 	{
@@ -35,10 +38,6 @@ public class FireWorks extends BasicGameState
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
 	{	
-		for(Particle p : particles)
-		{
-			p.update();
-		}
 
 
 
@@ -47,10 +46,8 @@ public class FireWorks extends BasicGameState
 
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
-		for(Particle p : particles)
-		{
-			p.render(g);
-		}
+		g.setBackground(Color.blue);
+
 	}
 	
 	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException 
@@ -70,7 +67,9 @@ public class FireWorks extends BasicGameState
 	
 	public void mousePressed(int button, int x, int y)
 	{
-		// This code happens every time the user presses the mouse
+//		particles.add(new Particle(Mouse.getX(), Main.getScreenHeight()-Mouse.getY()));
+//		System.out.println(Mouse.getY());
+
 
 
 	}

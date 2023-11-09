@@ -18,7 +18,7 @@ public class Main extends StateBasedGame
 	public Main(String name) 
 	{
 		super(name);
-		
+
 		game = new FireWorks(GAME_ID);
 	}
 
