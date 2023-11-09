@@ -16,7 +16,7 @@ public class FireWorks extends BasicGameState
 	public ArrayList<FireCloud> clouds;
 	public ArrayList<Expander> exp;
 	private int id;
-	
+
 
 
 
@@ -77,10 +77,14 @@ public class FireWorks extends BasicGameState
 			b.render(g);
 		}
 
-
 		g.setColor(Color.white);
 		g.drawString(String.valueOf(bigBois.size() + clouds.size()+ exp.size()), 150, 170);
 
+//		for(FireCloud fc : clouds) {
+//			if(fc.isExpired) {
+//				fcexpiredIndex.add(FireCloud.indexOf(fc));
+//			}
+//		}
 
 	}
 	

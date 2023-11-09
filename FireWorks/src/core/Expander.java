@@ -5,6 +5,7 @@ import org.newdawn.slick.Graphics;
 import java.util.concurrent.ThreadLocalRandom;
 public class Expander {
     float xPos;
+    boolean isExpired = false;
     float yPos;
     float xSpeed;
     float ySpeed;
