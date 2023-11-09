@@ -12,10 +12,8 @@ import java.util.ArrayList;
 
 public class FireWorks extends BasicGameState
 {
-	public static ArrayList<Particle> particles;
+	public static ArrayList<BigBoi> bigBois;
 	private int id;
-	int Mx = Mouse.getX();
-	int My = Mouse.getY();
 
 	public FireWorks(int id)
 	{
@@ -31,15 +29,17 @@ public class FireWorks extends BasicGameState
 	{
 		// This code happens when you enter a game state for the *first time.*
 		gc.setShowFPS(true);
-		particles = new ArrayList<Particle>();
+		bigBois = new ArrayList<BigBoi>();
 
 
 	}
 
-	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
-	{	
+	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
 
-
+		for (BigBoi b : bigBois)
+		{
+			b.update();
+		}
 
 
 	}
@@ -47,6 +47,10 @@ public class FireWorks extends BasicGameState
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
 		g.setBackground(Color.blue);
+		for (BigBoi b : bigBois)
+		{
+			b.render(g);
+		}
 
 	}
 	
@@ -67,7 +71,12 @@ public class FireWorks extends BasicGameState
 	
 	public void mousePressed(int button, int x, int y)
 	{
-//		particles.add(new Particle(Mouse.getX(), Main.getScreenHeight()-Mouse.getY()));
+
+		for(int i = 0; i<15; i++)
+		{
+			bigBois.add(new BigBoi(Mouse.getX(), Main.getScreenHeight()-Mouse.getY()));
+
+		}
 //		System.out.println(Mouse.getY());
 
 
