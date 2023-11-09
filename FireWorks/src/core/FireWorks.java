@@ -46,11 +46,12 @@ public class FireWorks extends BasicGameState
 
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
-		g.setBackground(Color.blue);
+		g.setBackground(Color.black);
 		for (BigBoi b : bigBois)
 		{
 			b.render(g);
 		}
+
 
 	}
 	
@@ -71,19 +72,13 @@ public class FireWorks extends BasicGameState
 	
 	public void mousePressed(int button, int x, int y)
 	{
+		if(button == 0) {
+			for (int i = 0; i < (int) (Math.random() * 78); i++) {
+				bigBois.add(new BigBoi(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
 
-		for(int i = 0; i<15; i++)
-		{
-			bigBois.add(new BigBoi(Mouse.getX(), Main.getScreenHeight()-Mouse.getY()));
-
+			}
 		}
-//		System.out.println(Mouse.getY());
-
-
-
 	}
 	
-	
-
 
 }
