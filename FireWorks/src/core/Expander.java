@@ -3,10 +3,9 @@ import org.lwjgl.input.Mouse;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 import java.util.concurrent.ThreadLocalRandom;
-
-
 public class Expander {
     float xPos;
+    boolean isExpired = false;
     float yPos;
     float xSpeed;
     float ySpeed;
@@ -30,6 +29,10 @@ public class Expander {
         xPos = xPos + xSpeed*2;
         alpha = alpha - 3;
         size = size + 5;
+//        if(yPos < Main.getScreenHeight())
+//        {
+//            exp.remove(this);
+//        }
     }
      void render(Graphics g)
     {

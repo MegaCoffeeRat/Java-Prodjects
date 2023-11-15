@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7328c67e-c586-457c-9312-e271134bb13b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/FacePrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Sorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Storyteller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/WordGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Wordsmith.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FacePrinter/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FacePrinter/out/production/FacePrinter/FacePrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FacePrinter/out/production/FacePrinter/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/SlickJavaLib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireWorks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Expander.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/Expander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/FireCloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/FireCloud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/FireWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/FireWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/libraries/SlickJavaLib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/FireWorks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/Expander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/FireCloud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/FireWorks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/basic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java-Prodjects" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LionsDen/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Den.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Lion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Palindrome/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Palindrome/out/production/Palindrome/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Palindrome/out/production/Palindrome/Wordsmith.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Restaurant/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Restaurant/out/production/Restaurant/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Restaurant/out/production/Restaurant/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Story/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Story/out/production/Story/Main.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Xz851MOcEiB13xw6ZbsZvgcOcV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Fedor/OneDrive/Documents/SlickJavaLib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7328c67e-c586-457c-9312-e271134bb13b" name="Changes" comment="" />
+      <created>1699620360763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699620360763</updated>
+    </task>
+    <servers />
+  </component>
+</project>
