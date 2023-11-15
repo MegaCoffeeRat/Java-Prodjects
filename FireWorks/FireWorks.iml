@@ -28,5 +28,16 @@
         <jarDirectory url="file://$MODULE_DIR$/../../../../!Slick/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="SlickJavaLib" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../SlickJavaLib/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../SlickJavaLib/lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

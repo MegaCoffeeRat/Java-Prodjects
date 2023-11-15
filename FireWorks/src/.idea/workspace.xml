@@ -5,55 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7328c67e-c586-457c-9312-e271134bb13b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/FacePrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Sorter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Storyteller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/WordGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/Wordsmith.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BubbleSort/out/production/BubbleSort/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FacePrinter/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FacePrinter/out/production/FacePrinter/FacePrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FacePrinter/out/production/FacePrinter/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SlickJavaLib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FireWorks.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Expander.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/Expander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/FireCloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/FireCloud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/FireWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/FireWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/libraries/SlickJavaLib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/FireWorks.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/Expander.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/FireCloud.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/FireWorks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FireWorks/core/basic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java-Prodjects" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LionsDen/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Den.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Lion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LionsDen/out/production/GitLionsCopy/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Palindrome/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Palindrome/out/production/Palindrome/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Palindrome/out/production/Palindrome/Wordsmith.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Restaurant/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Restaurant/out/production/Restaurant/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Restaurant/out/production/Restaurant/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Story/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Story/out/production/Story/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +35,21 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="src" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

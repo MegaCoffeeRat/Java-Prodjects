@@ -12,7 +12,8 @@ import java.util.ArrayList;
 
 public class FireWorks extends BasicGameState
 {
-	public  ArrayList<basic> bigBois;
+
+	public  ArrayList<basic> basic;
 	public ArrayList<FireCloud> clouds;
 	public ArrayList<Expander> exp;
 	private int id;
@@ -24,26 +25,25 @@ public class FireWorks extends BasicGameState
 	{
 		this.id = id;
 	}
-	
-	public int getID() 
+
+	public int getID()
 	{
-		return id;		
+		return id;
 	}
-	
-	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException 
+
+	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException
 	{
 		// This code happens when you enter a game state for the *first time.*
 		gc.setShowFPS(true);
-		bigBois = new ArrayList<basic>();
+		basic = new ArrayList<basic>();
 		clouds = new ArrayList<FireCloud>();
 		exp = new ArrayList<Expander>();
-
 
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
 
-		for (basic b : bigBois)
+		for (basic b : basic)
 		{
 			b.update();
 		}
@@ -60,11 +60,11 @@ public class FireWorks extends BasicGameState
 
 	}
 
-	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
+	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException
 	{
 		g.setBackground(Color.black);
 
-		for (basic b : bigBois)
+		for (basic b : basic)
 		{
 			b.render(g);
 		}
@@ -78,36 +78,50 @@ public class FireWorks extends BasicGameState
 		}
 
 		g.setColor(Color.white);
-		g.drawString(String.valueOf(bigBois.size() + clouds.size()+ exp.size()), 150, 170);
+		g.drawString( "# of FireWorks: " + String.valueOf( basic.size() + clouds.size()+ exp.size()), 150, 170);
+		for(int i = 0; i < exp.size(); i++) {
+			if(exp.get(i).yPos > Main.getScreenHeight())
+			{
+				exp.remove(i);
+			}
+		}
 
-//		for(FireCloud fc : clouds) {
-//			if(fc.isExpired) {
-//				fcexpiredIndex.add(FireCloud.indexOf(fc));
-//			}
-//		}
+		for(int i = 0; i < clouds.size(); i++) {
+			if(clouds.get(i).yPos > Main.getScreenHeight())
+			{
+				clouds.remove(i);
+			}
+		}
+
+		for(int i = 0; i < basic.size(); i++) {
+			if(basic.get(i).yPos > Main.getScreenHeight())
+			{
+				basic.remove(i);
+			}
+		}
 
 	}
-	
-	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException 
+
+	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException
 	{
-		// This code happens when you enter a gameState.  
+		// This code happens when you enter a gameState.
 	}
 
-	public void leave(GameContainer gc, StateBasedGame sbg) 
+	public void leave(GameContainer gc, StateBasedGame sbg)
 	{
-		// This code happens when you leave a gameState. 
+		// This code happens when you leave a gameState.
 	}
 
 	public void keyPressed(int key, char c)
 	{
 		// This code happens every time the user presses a key
 	}
-	
+
 	public void mousePressed(int button, int x, int y)
 	{
 		if(button == 0) {
 			for (int i = 0; i < (int) (Math.random() * 78); i++) {
-				bigBois.add(new basic(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
+				basic.add(new basic(Mouse.getX(), Main.getScreenHeight() - Mouse.getY()));
 
 
 			}
@@ -128,6 +142,6 @@ public class FireWorks extends BasicGameState
 			}
 		}
 	}
-	
+
 
 }
