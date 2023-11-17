@@ -14,9 +14,7 @@ public class basic {
         yPos = y;
         xPos = x;
         ySpeed = ThreadLocalRandom.current().nextInt(-10, 1 + 1);
-                //(int) ((Math.random() * (5 - -10 + 1)) + -10);
-        xSpeed = ThreadLocalRandom.current().nextInt(-7, 7 + 1); //trying out new way to generate range of neg nums
-        //(float)(Math.random()*(7 - -5)+-15); old way - didnt work
+        xSpeed = ThreadLocalRandom.current().nextInt(-7, 7 + 1);
         size = 10;
         gravity = 0.2F;
     }

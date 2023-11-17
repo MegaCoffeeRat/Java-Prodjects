@@ -28,11 +28,8 @@ public class Expander {
         ySpeed = ySpeed + gravity;
         xPos = xPos + xSpeed*2;
         alpha = alpha - 3;
-        size = size + 5;
-//        if(yPos < Main.getScreenHeight())
-//        {
-//            exp.remove(this);
-//        }
+        size = size + 2;
+
     }
      void render(Graphics g)
     {

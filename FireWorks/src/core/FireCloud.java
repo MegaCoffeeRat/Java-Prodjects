@@ -34,6 +34,8 @@ public class FireCloud {
     void render(Graphics g)
     {
         g.setColor(new Color( (int)ThreadLocalRandom.current().nextInt(150, 200 + 1), (int)ThreadLocalRandom.current().nextInt(100, 254 + 1), 0));
+//        g.setColor(new Color((int)(Math.random()*255),(int)(Math.random()*255) ,(int)(Math.random()*255)) );
+
         g.fillRect(xPos-(size/2), yPos-(size/2), size*2, size*2);
 
     }
