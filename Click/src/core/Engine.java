@@ -1,15 +1,14 @@
 package core;
 
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.Image;
-import org.newdawn.slick.SlickException;
+import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 public class Engine extends BasicGameState
 {	
 	private int id;
+	private int timer =  20*60;
+	boolean Active = true;
 	Image bg;
 
 	public Engine(int id)
@@ -31,6 +30,17 @@ public class Engine extends BasicGameState
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
 	{	
+		while(Active)
+		{
+			if(timer == 20*60)
+			{
+				timer--;
+			}
+			else if(timer <= 0)
+			{
+				Active = false;
+			}
+		}
 		// This is updates your game's logic every frame.  NO DRAWING.
 	}
 
@@ -38,6 +48,10 @@ public class Engine extends BasicGameState
 	{
 		// This code renders shapes and images every frame.
 		g.drawImage(bg, 0,0);
+		g.setColor(Color.black);
+		g.drawString("Timer: " + timer/60, 150,150);
+		System.out.println(timer);
+
 
 	}
 	
