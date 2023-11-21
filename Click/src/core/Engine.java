@@ -12,6 +12,7 @@ public class Engine extends BasicGameState
 	private int id;
 	Image bg;
 	public ArrayList<Fries> fries;
+//	public float randX = (float)(Math.random())*Main.getScreenWidth();
 
 
 
@@ -34,8 +35,11 @@ public class Engine extends BasicGameState
 		bg = new Image("res/bg.png");
 		Images.loadImages();
 		fries = new ArrayList<Fries>();
-		fries.add(new Fries(200,200));
+		for(int i = 0; i < 25; i++)
+		{
+			fries.add(new Fries((float)Math.random()*1000,1000));
 
+		}
 
 	}
 

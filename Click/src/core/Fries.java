@@ -5,7 +5,7 @@ import org.newdawn.slick.Graphics;
 public class Fries extends GameObject
 {
     Fries(float x, float y)  {
-        super(x, y);
+        super(1000, y);
         ySpeed = 2;
         img = Images.Fries;
     }
@@ -17,5 +17,6 @@ public class Fries extends GameObject
     public void render(Graphics g)
     {
         super.render(g);
+        System.out.println(xPos);
     }
 }
