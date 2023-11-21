@@ -32,13 +32,17 @@ public class Engine extends BasicGameState
 		for(int i = 0; i < 25; i++)
 		{
 			fries.add(new Fries(rnd.nextInt(Main.getScreenWidth()), 10));
-
 		}
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
 	{
+
 		// This is updates your game's logic every frame.  NO DRAWING.
+		for(Fries f :  fries)
+		{
+			f.update();
+		}
 	}
 
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
@@ -46,15 +50,10 @@ public class Engine extends BasicGameState
 		// This code renders shapes and images every frame.
 		g.drawImage(bg, 0,0);
 		g.setColor(Color.black);
-
 		for(Fries f :  fries)
 		{
 			f.render(g);
 		}
-
-
-
-
 	}
 	
 	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException 
