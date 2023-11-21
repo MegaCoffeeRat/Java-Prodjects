@@ -3,18 +3,20 @@ package core;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 
-public class object {
+public class GameObject {
 
     float xPos;
     float yPos;
     float ySpeed;
-    Image image;
+    protected Image img;
 
-    object(float x, float y)
+    GameObject(float x, float y)
     {
         x = xPos;
         y = yPos;
     }
+
+
 
 
     void update()

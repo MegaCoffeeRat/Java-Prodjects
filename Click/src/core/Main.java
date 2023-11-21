@@ -42,7 +42,7 @@ public class Main extends StateBasedGame
 	{
 		try 
 		{
-			appgc = new AppGameContainer(new Main("My First Project"));
+			appgc = new AppGameContainer(new Main("Click Game"));
 			System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
 		
 			appgc.setDisplayMode(appgc.getScreenWidth(), appgc.getScreenHeight(), false);

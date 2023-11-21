@@ -1,23 +1,18 @@
 package core;
 import org.newdawn.slick.Graphics;
-import org.newdawn.slick.Image;
-import org.newdawn.slick.SlickException;
 
 
-public class fries extends object
+public class fries extends GameObject
 {
-
-    fries(float x, float y) throws SlickException {
+    fries(float x, float y)  {
         super(x, y);
         ySpeed = 2;
-        image = new Image("res/fries.png");
-    }
 
+    }
     void update()
     {
         super.update();
     }
-
 
     void render(Graphics g)
     {
