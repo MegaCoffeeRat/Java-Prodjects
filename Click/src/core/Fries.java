@@ -1,11 +1,14 @@
 package core;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 
 
 public class Fries extends GameObject
 {
+
     Fries(float x, float y)  {
         super(x, y);
+        ySpeed = 10;
         img = Images.Fries;
     }
     void update()
@@ -16,6 +19,5 @@ public class Fries extends GameObject
     public void render(Graphics g)
     {
         super.render(g);
-        System.out.println(x);
     }
 }
