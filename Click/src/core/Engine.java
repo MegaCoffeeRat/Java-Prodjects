@@ -37,7 +37,7 @@ public class Engine extends BasicGameState
 		fries = new ArrayList<Fries>();
 		for(int i = 0; i < 25; i++)
 		{
-			fries.add(new Fries((float)Math.random()*1000,1000));
+			fries.add(new Fries(100+i*2,10));
 
 		}
 

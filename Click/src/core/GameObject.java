@@ -6,15 +6,15 @@ import org.newdawn.slick.Image;
 
 public class GameObject {
 
-    float xPos;
-    float yPos;
+    float x;
+    float y;
     float ySpeed;
     protected Image img;
 
     GameObject(float x, float y)
     {
-        x = xPos;
-        y = yPos;
+        this.x = x;
+        this.y=y;
     }
 
 
@@ -22,14 +22,14 @@ public class GameObject {
 
     void update()
     {
-        yPos = ySpeed + yPos;
+        y = ySpeed + y;
     }
 
 
 
     void render(Graphics g)
     {
-        g.drawImage(img, xPos, yPos);
+        g.drawImage(img, x,y);
     }
 
 }
