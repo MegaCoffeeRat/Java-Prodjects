@@ -3,6 +3,7 @@ package core;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 
+
 public class GameObject {
 
     float xPos;
@@ -28,7 +29,7 @@ public class GameObject {
 
     void render(Graphics g)
     {
-
+        g.drawImage(img, xPos, yPos);
     }
 
 }

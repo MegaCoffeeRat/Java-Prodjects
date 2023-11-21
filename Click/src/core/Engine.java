@@ -4,14 +4,15 @@ import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Engine extends BasicGameState
 {	
 	private int id;
-	private int timer =  20*60;
-	boolean Active = true;
 	Image bg;
+	public ArrayList<Fries> fries;
+
 
 
 	public Engine(int id)
@@ -26,14 +27,16 @@ public class Engine extends BasicGameState
 
 
 
-
-
-
 	public void init(GameContainer gc, StateBasedGame sbg) throws SlickException 
 	{
 		// This code happens when you enter a game state for the *first time.*
 		gc.setShowFPS(true);
 		bg = new Image("res/bg.png");
+		Images.loadImages();
+		fries = new ArrayList<Fries>();
+		fries.add(new Fries(200,200));
+
+
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
@@ -46,6 +49,14 @@ public class Engine extends BasicGameState
 		// This code renders shapes and images every frame.
 		g.drawImage(bg, 0,0);
 		g.setColor(Color.black);
+
+		for(Fries f :  fries)
+		{
+			f.render(g);
+		}
+
+
+
 
 	}
 	
