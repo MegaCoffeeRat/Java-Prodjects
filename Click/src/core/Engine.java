@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Engine extends BasicGameState
 {	
 	private int id;
-	Image bg;
+
 	public ArrayList<Fries> fries;
 	Random 	rnd = new Random();
 
@@ -27,7 +27,7 @@ public class Engine extends BasicGameState
 	{
 		Images.loadImages();
 		gc.setShowFPS(true);
-		bg = new Image("res/bg.png");
+
 		fries = new ArrayList<Fries>();
 		for(int i = 0; i < 25; i++)
 		{
@@ -48,7 +48,7 @@ public class Engine extends BasicGameState
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
 		// This code renders shapes and images every frame.
-		g.drawImage(bg, 0,0);
+		g.drawImage(Images.scaledbg, 0,0);
 		g.setColor(Color.black);
 		for(Fries f :  fries)
 		{
