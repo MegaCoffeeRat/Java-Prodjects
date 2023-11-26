@@ -9,6 +9,7 @@ import org.newdawn.slick.state.StateBasedGame;
 public class Main extends StateBasedGame 
 {
 	public final static int FRAMES_PER_SECOND = 60;
+
 	private static AppGameContainer appgc;
 	
     public static final int GAME_ID  = 0;
@@ -21,6 +22,8 @@ public class Main extends StateBasedGame
 		
 		game = new Engine(GAME_ID);
 	}
+
+
 
 	public static int getScreenWidth()
 	{
@@ -37,6 +40,7 @@ public class Main extends StateBasedGame
 	{
 		addState(game);
 	}
+
 
 	public static void main(String[] args) 
 	{

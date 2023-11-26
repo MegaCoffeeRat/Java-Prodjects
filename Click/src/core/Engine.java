@@ -1,6 +1,7 @@
 package core;
 import java.util.Random;
 
+import org.lwjgl.input.Mouse;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -11,6 +12,10 @@ import java.util.ArrayList;
 public class Engine extends BasicGameState
 {	
 	private int id;
+
+
+
+	public static float AxPos = 1920/2;
 
 	public ArrayList<Fries> fries;
 	Random 	rnd = new Random();
@@ -45,11 +50,42 @@ public class Engine extends BasicGameState
 		}
 	}
 
+	public void ArnoldMove(float MxPos)
+	{
+		boolean gThan = false;//arnie greater than mouse pos etc
+		boolean lThan = false;
+		if(AxPos > MxPos)
+		{
+			gThan = true;
+		}
+		else
+		{
+			lThan = true;
+		}
+
+		if(gThan)
+		{
+			while(AxPos != MxPos)
+			{
+				AxPos = AxPos - 1;
+			}
+		}
+		else if(lThan)
+		{
+			while(AxPos != MxPos)
+			{
+				AxPos = AxPos + 1;
+			}
+		}
+	}
+
+
 	public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException 
 	{
 		// This code renders shapes and images every frame.
 		g.drawImage(Images.scaledbg, 0,0);
 		g.setColor(Color.black);
+		g.drawImage(Images.arnold, AxPos, Main.getScreenHeight()-500);
 		for(Fries f :  fries)
 		{
 			f.render(g);
@@ -74,6 +110,15 @@ public class Engine extends BasicGameState
 	public void mousePressed(int button, int x, int y)
 	{
 		// This code happens every time the user presses the mouse
+
+		if(button == 0) {
+			ArnoldMove(Mouse.getX());
+		}
+
+
+
+
+
 	}
 	
 	
