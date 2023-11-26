@@ -10,13 +10,13 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../../SlickJavaLib/lib" />
+          <root url="file://$MODULE_DIR$/../../../libs/Slick2D/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../../../../SlickJavaLib/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../libs/Slick2D/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="SlickJavaLib" level="project" />
+    <orderEntry type="library" name="Slick2D" level="application" />
   </component>
 </module>
