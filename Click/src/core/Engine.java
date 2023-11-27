@@ -18,6 +18,10 @@ public class Engine extends BasicGameState
 	public static float AxPos = 1920/2;
 
 	public ArrayList<Fries> fries;
+	public ArrayList<Weight> lbs;
+
+
+
 	Random 	rnd = new Random();
 
 	public Engine(int id)
@@ -34,20 +38,28 @@ public class Engine extends BasicGameState
 		gc.setShowFPS(true);
 
 		fries = new ArrayList<Fries>();
-		for(int i = 0; i < 25; i++)
+		lbs = new ArrayList<Weight>();
+		for(int i = 0; i < 10; i++)
 		{
 			fries.add(new Fries(rnd.nextInt(Main.getScreenWidth()), 10));
 		}
+
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException
 	{
-
-		// This is updates your game's logic every frame.  NO DRAWING.
 		for(Fries f :  fries)
 		{
 			f.update();
 		}
+
+		for(Weight lbs : lbs)
+		{
+			lbs.update();
+		}
+
+
+
 	}
 
 	public void ArnoldMove(float MxPos)
@@ -90,6 +102,10 @@ public class Engine extends BasicGameState
 		{
 			f.render(g);
 		}
+		for(Weight lbs : lbs)
+		{
+			lbs.render(g);
+		}
 	}
 	
 	public void enter(GameContainer gc, StateBasedGame sbg) throws SlickException 
@@ -113,6 +129,10 @@ public class Engine extends BasicGameState
 
 		if(button == 0) {
 			ArnoldMove(Mouse.getX());
+			for(int i = 0; i < 1; i++)
+			{
+				lbs.add(new Weight(AxPos, Main.getScreenHeight()-100));
+			}
 		}
 
 

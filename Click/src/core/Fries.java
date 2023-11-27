@@ -8,7 +8,7 @@ public class Fries extends GameObject
 
     Fries(float x, float y)  {
         super(x, y);
-        ySpeed = 10;
+        ySpeed = 5;
         img = Images.Fries;
     }
     void update()
